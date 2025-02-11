@@ -102,4 +102,3 @@ Antes de iniciar, você precisa ter instalado:
 
 ## 📜 Licença
 Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo e modificá-lo! 🎉
-
