@@ -39,7 +39,7 @@ Este projeto é uma aplicação fullstack que consiste em um frontend desenvolvi
 
 ### Requisitos
 Antes de iniciar, você precisa ter instalado:
-- Docker e Docker Compose
+- Docker
 - Node.js e npm (caso queira rodar sem Docker)
 - Python 3.12 e pip (caso queira rodar sem Docker)
 
