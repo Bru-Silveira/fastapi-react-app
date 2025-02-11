@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "city": "Goiânia",
+        "state": "GO"
+    },
+    {
+        "id": 2,
+        "city": "São Paulo",
+        "state": "SP"
+    },
+    {
+        "id": 3,
+        "city": "Rio de Janeiro",
+        "state": "RJ"
+    },
+    {
+        "id": 4,
+        "city": "Belo Horizonte",
+        "state": "Minas Gerais"
+    },
+    {
+        "id": 5,
+        "city": "Porto Seguro",
+        "state": "Bahia" 
+    },
+    {
+        "id": 6,
+        "city": "Natal",
+        "state": "Rio Grande do Norte"
+    },
+    {
+        "id": 7,
+        "city": "Florianópolis",
+        "state": "Santa Catarina"
+    },
+    {
+        "id": 8,
+        "city": "Balneário Camboriú",
+        "state": "Santa Catarina"
+    },
+    {
+        "id": 9,
+        "city": "Cabo Frio",
+        "state": "Rio de Janeiro"
+    },
+    {
+        "id": 10,
+        "city": "Caldas Novas",
+        "state": "Goiás"
+    }
+]
