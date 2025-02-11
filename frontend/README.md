@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Projeto Fullstack - React e FastAPI 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação fullstack que consiste em um frontend desenvolvido com React e um backend utilizando FastAPI. A aplicação permite acessar e exibir dados de pessoas e cidades através de uma API.
 
-## Available Scripts
+## 🛠️ Tecnologias Utilizadas
 
-In the project directory, you can run:
+### Frontend:
+- React 19
+- Axios
+- React Scripts
+- Docker
 
-### `npm start`
+### Backend:
+- FastAPI
+- Uvicorn
+- Python
+- Pydantic
+- Docker
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 Estrutura do Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+/
+├── backend/                
+│   ├── Dockerfile
+│   ├── main.py
+│   ├── requirements.txt
+│   └── ...
+├── frontend/              
+│   ├── public/
+│   ├── src/
+│   ├── Dockerfile
+│   ├── package.json
+│   └── ...
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Como Rodar o Projeto
 
-### `npm run build`
+### Requisitos
+Antes de iniciar, você precisa ter instalado:
+- Docker e Docker Compose
+- Node.js e npm (caso queira rodar sem Docker)
+- Python 3.12 e pip (caso queira rodar sem Docker)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Rodando com Docker 🐳
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/Bru-Silveira/fastapi-react-app.git
+   cd Bru-Silveira/fastapi-react-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Inicie os containers do frontend e backend:
+  - Backend
+    
+    Navegue para o diretório `backend` e construa a imagem Docker:**
+    ```sh
+    cd backend
+    docker build . -t backend
 
-### `npm run eject`
+    Inicia o container `backend`:
+    ```sh
+    docker run --name backend -rm -p 8000:8000 backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Acesse a aplicação:
+   - Frontend: `http://localhost:3000`
+   - Backend: `http://localhost:8000/docs`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Rodando Manualmente 🖥️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Backend
+1. Instale as dependências:
+   ```sh
+   cd backend
+   pip install -r requirements.txt
+   ```
+2. Execute o backend:
+   ```sh
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+   ```
 
-## Learn More
+#### Frontend
+1. Instale as dependências:
+   ```sh
+   cd frontend
+   npm install
+   ```
+2. Inicie o frontend:
+   ```sh
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔥 Endpoints Disponíveis
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Pessoas (dados fixos)
+- `GET /api01` - Retorna uma lista fixa de pessoas
 
-### Code Splitting
+### Cidades (dados dinâmicos do arquivo `cities.json`)
+- `GET /api02` - Retorna uma lista de cidades e estados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📜 Licença
+Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo e modificá-lo! 🎉
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
