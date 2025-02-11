@@ -1,0 +1,9 @@
+MIT License
+
+Copyright (c) 2025 Bruna Silveira
+
+Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para lidar no Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e para permitir que as pessoas a quem o Software é fornecido o façam, desde que as seguintes condições sejam atendidas:
+
+A(s) cópia(s) do Software devem conter o aviso de copyright acima e este aviso de permissão nesta documentação ou outros materiais fornecidos com a cópia.
+
+O Software é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita, incluindo, mas não se limitando a, garantias de comercialização, adequação a um determinado fim e não violação. Em nenhum caso os autores ou detentores do copyright serão responsáveis por qualquer reclamação, dano ou outra responsabilidade, seja em uma ação de contrato, ato ilícito ou de outra forma, decorrente de, ou em conexão com, o Software ou o uso ou outros negócios no Software.
